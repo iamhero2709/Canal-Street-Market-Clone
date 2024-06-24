@@ -1,3 +1,4 @@
+@import url(https://db.onlinewebfonts.com/c/422ea15a93c7f520a821eabfa413dc1a?family=PingFang+SC+Semibold);
 @font-face {
     font-family: og;
     src: url(./Ogg-Light-BF646c18fbb73f7.otf);
@@ -6,6 +7,8 @@
     font-family: mono;
     src: url(./FontsFree-Net-ApercuMono.ttf);
   }
+
+
 *{
     margin: 0;
     padding: 0;
@@ -19,7 +22,36 @@ body, html{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    position: absolute;
 }
+#side-nav{
+    background-color: #000;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+color: white;
+left: 44%;
+    transform: rotate(90deg); /* Rotates the div 90 degrees */
+    transform-origin: center; /* Keeps the rotation centered */
+    
+}
+#side-nav #part1{
+    color: red;
+    background-color: white;
+ 
+}
+#side-nav a{
+  text-decoration: none;
+  
+    
+}
+#side-nav a h3{
+    text-decoration: none;
+    color:red
+      
+  } 
+
 #page1{
  /*   background-color: red;*/
  margin-top: 10vw;
@@ -39,9 +71,10 @@ letter-spacing: 0;
     width: max-content;
     height: 100vh;
     width: 100vw;
+    object-fit: cover;
 }
 #page3{
- height:100vh;
+ height:140vh;
 margin-top: 6vw;
 padding: 3vw;
 }
@@ -64,10 +97,58 @@ padding: 3vw;
 }
 .card-img img{
     height: 70vh;
-width: 22vw;
+width: 18vw;
+object-fit: cover;
 }
 .card-text p{
     font-size: 13px;
     font-family: mono;
 
 }
+
+#page4{
+    min-height: 50vh;
+
+    display: flex;
+  justify-content: center;
+  padding: 3vw 3vw;
+  gap: 10vw;
+}
+#page4 h2{
+    font-family: "PingFang SC Semibold";
+    font-size: 8rem;
+    color: white; /* Fill color */
+    text-shadow: 
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000; /* Black outline */
+    font-size: 48px; /* Example font size */
+    font-weight: bold; /* Optional: makes the text bold */
+}
+#page4 h1{
+    font-family: og;
+    font-size: 6rem;
+    font-weight: 600;
+   
+    
+}
+#page5{
+    height: 40vh;
+  
+}
+#page5 {
+    display: flex;
+    gap: 80px;
+    padding: 2vw 2vw;
+}
+#page5 p{
+    font-family: mono;
+    font-size:12px
+}
+#page5 h5{
+    font-family: og;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
